@@ -1,0 +1,151 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.contentWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: -2px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.tagline {
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  margin-top: 1rem;
+  text-align: center;
+  color: #666;
+  font-weight: 400;
+}
+
+.logoContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.logo {
+  max-width: min(60%, 400px);
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.outletWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+  padding: 2rem;
+}
+
+.pageTitle {
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .contentWrapper,
+  .outletWrapper {
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .title {
+    margin-top: 1rem;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  .pageTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Additional Improvements */
+a {
+  color: #00a8ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0077b6;
+}
+
+/* Updated Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport coverage */
+    height: auto; /* Allow content to expand */
+  }
+
+  .contentWrapper,
+  .outletWrapper {
+    width: 100%;
+    min-height: auto; /* Remove fixed height */
+    padding: 1rem; /* Reduce padding */
+    flex: none; /* Disable flex growing */
+  }
+
+  .title {
+    margin-top: 0.5rem;
+    font-size: 2.2rem; /* Fixed size for mobile */
+  }
+
+  .tagline {
+    font-size: 1rem; /* Fixed size for readability */
+    margin-top: 0.5rem;
+  }
+
+  .logo {
+    max-width: 70%;
+    margin: 1rem 0; /* Reduce spacing */
+  }
+
+  .outletWrapper {
+    padding: 1.5rem 1rem; /* Optimize form space */
+    justify-content: flex-start; /* Align content to top */
+  }
+
+  .pageTitle {
+    font-size: 1.8rem; /* Smaller heading */
+    margin: 1rem 0;
+  }
+}
+
+/* Add this to prevent form overflow */
+.outletWrapper form {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 1rem;
+}
