@@ -1,0 +1,23 @@
+/* styles.css */
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  

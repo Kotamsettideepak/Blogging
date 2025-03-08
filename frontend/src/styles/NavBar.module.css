@@ -1,0 +1,245 @@
+/* Navbar styles */
+.navbar {
+  background-color: #000 !important;
+  color: #fff !important;
+  padding: 0.5rem 0;
+}
+
+/* Logo container */
+.logoContainer {
+  display: flex !important;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 40px;
+  filter: invert(1);
+  max-width: 120px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Company title */
+.companyTitle {
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin-right: 2rem !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.companyTitle:hover {
+  color: #ffcc00; /* Highlight effect */
+}
+
+/* Desktop navigation styles */
+.desktopContent {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  max-width: calc(100% - 200px);
+}
+
+/* Search bar styles */
+.searchField {
+  background-color: #ffffff !important;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.searchField .MuiOutlinedInput-root {
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  height: 40px;
+}
+
+.searchField .MuiOutlinedInput-input {
+  padding: 10px 20px !important;
+  font-size: 0.95rem;
+  color: #000 !important;
+}
+
+.searchField .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff !important;
+}
+
+.searchField .MuiInputBase-input::placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Navigation buttons */
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.navButton {
+  text-transform: none !important;
+  font-size: 1rem !important;
+  padding: 8px 16px !important;
+  transition: all 0.3s ease-in-out !important;
+  white-space: nowrap;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+/* Create Blog button */
+.createButton {
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 8px 24px !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease-in-out !important;
+  white-space: nowrap;
+}
+
+.createButton:hover {
+  background-color: #e0e0e0 !important;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Mobile styles */
+.mobileContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Mobile search bar */
+.mobileSearch {
+  background-color: #ffffff !important;
+  flex: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobileSearch .MuiOutlinedInput-root {
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+.mobileSearch .MuiOutlinedInput-input {
+  color: #000 !important;
+}
+
+.mobileSearch .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff !important;
+}
+
+.mobileSearch .MuiInputBase-input::placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Hover animation */
+.mobileSearch:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Create Blog button */
+.mobileCreateButton {
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  white-space: nowrap;
+  min-width: 120px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileCreateButton:hover {
+  transform: scale(1.05);
+}
+
+/* Menu button */
+.menuButton {
+  padding: 8px !important;
+}
+
+/* Drawer styles */
+.drawerPaper {
+  background-color: #000 !important;
+  color: #fff !important;
+  width: 250px !important;
+}
+
+/* Drawer animation */
+.drawerPaper {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Drawer menu items */
+.drawerContent {
+  padding: 1rem;
+}
+
+.menuItem {
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  margin: 4px 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.menuItem:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: scale(1.05);
+}
+
+/* Existing styles remain the same */
+
+/* Search button styles for desktop */
+.searchButton {
+  color: #000 !important;
+  margin-right: -8px !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Search button styles for mobile */
+.mobileSearchButton {
+  color: #000 !important;
+  margin-right: -8px !important;
+  padding: 4px !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.mobileSearchButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Adjust search field padding to accommodate button */
+.searchField .MuiOutlinedInput-input,
+.mobileSearch .MuiOutlinedInput-input {
+  padding-right: 14px !important;
+}
